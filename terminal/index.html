@@ -36,6 +36,7 @@
                <input type="text" id="cmd">
             </div>
          </div>
+      <audio id="pizzaAudio" src="/pizza.mp3"></audio>
       <script>
          $(document).ready(function() {
             $("#cmd").focus();
@@ -62,6 +63,10 @@
                   case "hello":
                      displayOutput("Hello World!");
                      break;
+		  case "pizza":
+		     var pizzaAudio = document.getElementById("pizzaAudio");
+			       displayOutput("Pizza!");
+                     pizzaAudio.play();
                   case "login":
                      displayOutput("Enter your username:");
                      var usernameEntered = false;
