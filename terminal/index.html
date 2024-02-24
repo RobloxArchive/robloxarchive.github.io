@@ -56,46 +56,48 @@
                   case "help":
                      displayOutput("Available commands:");
                      displayOutput("1. help - Display available commands");
-                     displayOutput("2. greet - Greet the user");
+                     displayOutput("2. hello - Say ''Hello World!''");
                      displayOutput("3. login - Login with username and password");
                      break;
-                  case "greet":
-                     displayOutput("Hello! How can I assist you?");
+                  case "hello":
+                     displayOutput("Hello World!");
                      break;
                   case "login":
                      displayOutput("Enter your username:");
-                     // Simulate login process
-                     $("#cmd").off("keypress"); // Disable previous event handler
+                     var usernameEntered = false;
+                     var passwordEntered = false;
+                     $("#cmd").off("keypress"); 
                      $("#cmd").keypress(function(e) {
-                        if(e.which == 13) {
+                        if(e.which == 13 && !usernameEntered) {
                            var username = $("#cmd").val();
-                           $("#output").append("<div>> Username: " + username + "</div>");
+                           $("#output").append("<div>Username: " + username + "</div>");
                            if (username === "user") {
-                              $("#output").append("<div>Enter your password:</div>");
-                              $("#cmd").off("keypress"); // Disable previous event handler
-                              $("#cmd").keypress(function(e) {
-                                 if(e.which == 13) {
-                                    var password = $("#cmd").val();
-                                    $("#output").append("<div>> Password: " + password + "</div>");
-                                    if (password === "pass") {
-                                       displayOutput("Successful login");
-                                    } else {
-                                       displayOutput("Incorrect password");
-                                    }
-                                    $("#cmd").val("");
-                                    $("#cmd").keypress(function(e) {
-                                       if(e.which == 13) {
-                                          handleCommand(""); // Restart command input
-                                       }
-                                    });
-                                 }
-                              });
+                              usernameEntered = true;
+                              displayOutput("Enter your password:");
                            } else {
                               displayOutput("Unauthorized username");
                               $("#cmd").val("");
+							   $("#cmd").off("keypress");
+							   $("#cmd").keypress(function(e) {
+                                 if(e.which == 13) {
+                                    handleCommand("");
+                                 }
+                              });
+                           }
+                        } else if (e.which == 13 && usernameEntered && !passwordEntered) {
+                           var password = $("#cmd").val();
+                           $("#output").append("<div>Password: " + password + "</div>");
+                           if (password === "pass") {
+                              passwordEntered = true;
+                              displayOutput("Successful login");
+                              $("#cmd").off("keypress"); 
+                           } else {
+                              displayOutput("Incorrect password");
+                              $("#cmd").val(""); 
+                              $("#cmd").off("keypress"); 
                               $("#cmd").keypress(function(e) {
                                  if(e.which == 13) {
-                                    handleCommand(""); // Restart command input
+                                    handleCommand("");
                                  }
                               });
                            }
@@ -104,6 +106,7 @@
                      break;
                   default:
                      displayOutput("Command not recognized. Type 'help' for available commands.");
+					 handleCommand("");
                }
             }
 
