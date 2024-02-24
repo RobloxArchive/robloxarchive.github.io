@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Terminal</title>
+   <style>
+   body {background-color: #000;}
+      #terminal {
+         font-family: monospace;
+         background-color: #000;
+         color: #0f0;
+         padding: 20px;
+      }
+      #input {
+         margin-top: 20px;
+         font-family: monospace;
+      }
+      #prompt {
+         font-family: monospace;
+         font-weight: bold;
+      }
+      #cmd {
+         background: transparent;
+         border: none;
+         color: #0f0;
+         outline: none;
+         font-family: monospace;
+      }
+   </style>
+</head>
+   <body>
+      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+         <div id="terminal">
+            <div id="output"></div>
+            <div id="input">
+               <span id="prompt">> </span>
+               <input type="text" id="cmd">
+            </div>
+         </div>
+      <script>
+         $(document).ready(function() {
+            $("#cmd").focus();
+            $("#cmd").keypress(function(e) {
+               if(e.which == 13) {
+                  var cmd = $("#cmd").val();
+                  $("#output").append("<div>> " + cmd + "</div>");
+
+                  // Handle custom commands
+                  handleCommand(cmd);
+
+                  $("#cmd").val("");
+               }
+            });
+
+            function handleCommand(cmd) {
+               switch (cmd) {
+                  case "help":
+                     displayOutput("Available commands:");
+                     displayOutput("1. help - Display available commands");
+                     displayOutput("2. greet - Greet the user");
+                     displayOutput("3. login - Login with username and password");
+                     break;
+                  case "greet":
+                     displayOutput("Hello! How can I assist you?");
+                     break;
+                  case "login":
+                     displayOutput("Enter your username:");
+                     // Simulate login process
+                     $("#cmd").off("keypress"); // Disable previous event handler
+                     $("#cmd").keypress(function(e) {
+                        if(e.which == 13) {
+                           var username = $("#cmd").val();
+                           $("#output").append("<div>> Username: " + username + "</div>");
+                           if (username === "user") {
+                              $("#output").append("<div>Enter your password:</div>");
+                              $("#cmd").off("keypress"); // Disable previous event handler
+                              $("#cmd").keypress(function(e) {
+                                 if(e.which == 13) {
+                                    var password = $("#cmd").val();
+                                    $("#output").append("<div>> Password: " + password + "</div>");
+                                    if (password === "pass") {
+                                       displayOutput("Successful login");
+                                    } else {
+                                       displayOutput("Incorrect password");
+                                    }
+                                    $("#cmd").val("");
+                                    $("#cmd").keypress(function(e) {
+                                       if(e.which == 13) {
+                                          handleCommand(""); // Restart command input
+                                       }
+                                    });
+                                 }
+                              });
+                           } else {
+                              displayOutput("Unauthorized username");
+                              $("#cmd").val("");
+                              $("#cmd").keypress(function(e) {
+                                 if(e.which == 13) {
+                                    handleCommand(""); // Restart command input
+                                 }
+                              });
+                           }
+                        }
+                     });
+                     break;
+                  default:
+                     displayOutput("Command not recognized. Type 'help' for available commands.");
+               }
+            }
+
+            function displayOutput(output) {
+               $("#output").append("<div>" + output + "</div>");
+            }
+         });
+      </script>
+   </body>
+</html>
