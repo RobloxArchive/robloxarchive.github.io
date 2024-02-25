@@ -2487,7 +2487,7 @@
       #input {
          margin-top: 20px;
          font-family: monospace;
-         display: none; 
+         display: none; /* Hide input initially */
       }
       #prompt {
          font-family: monospace;
@@ -2522,6 +2522,32 @@
          $(document).ready(function() {
             // Start boot-up sequence
             bootUp();
+			$("#cmd").keypress(function(e) {
+            if (e.which == 13) {
+                var cmd = $("#cmd").val().trim().toLowerCase();
+                $("#output").append("<br><div>> " + cmd + "</div><br>");
+                switch (cmd) {
+                    case "hello":
+                        $("#output").append("<div>Hello world</div>");
+                        break;
+                    case "pizza":
+                        $("#output").append("<div>Pizza!</div>");
+                        var audio = new Audio("http://robloxarchive.github.io/terminal/pizza.mp3");
+                        audio.play();
+                        break;
+                    case "help":
+                        $("#output").append("<div>Available commands:</div>");
+                        $("#output").append("<div>- hello: Prints 'Hello world' - ONLY FOR TESTING PURPOSES -</div>");
+                        $("#output").append("<div>- pizza: Plays the 'Pizza!' sound effect - ONLY FOR TESTING PURPOSES</div>");
+                        $("#output").append("<div>- help: Displays info about the commands</div>");
+                        break;
+                    default:
+                        $("#output").append("<div>Command not recognized. Type 'help' for assistance.</div>");
+                        break;
+                }
+                $("#cmd").val("");
+            }
+        });
          });
          function bootUp() {
             var messages = [
@@ -2544,7 +2570,7 @@
                "Starting SSH Services...",
                "Starting HTTP Services...",
 			   "Starting Database Services...",
-               "System OK. Starting Operative System..."
+               "System OK. Starting Operating System..."
             ];
 
             var outputDiv = $("#output");
@@ -2581,9 +2607,9 @@
                   i++;
                }, 100);
 
-               // ARG MAKER'S NOTE: The bootup tune you hear is by technicality a reference to a trailer posted by OneWhoFinds, but tbh I didn't of it until he pointed it out. When I made the tune I was thinking of the song Leaning Dream by ClascyJitto
-		    
-               setTimeout(function() {
+               // ARG MAKER'S NOTE: The bootup tune you hear is by technicality a reference to a trailer posted by OneWhoFinds, but tbh I didn't of it until he pointed it out. When I made the tune I was thinking of the song Leaning Dream by ClascyJitto lmao.
+               
+			   setTimeout(function() {
                   clearInterval(animationInterval);
                   icon.text("OK");
                }, 3000); 
@@ -2603,12 +2629,12 @@
 "                ██████████████████     ████████████████████████████▌\n" +
 "               ▐███████████████████       ▀▀▀▀█████████████████████\n" +
 "               ████████████████████▌          ████████████████████▌\n" +
-"              █████████████████████          █████████████████████   Ｒｏｂｌｏｘ Ｉｎｂｅｔｗｅｅｎ Ｓｏｃｉｅｔｙ\n" +
+"              █████████████████████          █████████████████████   ＲＯＢＬＯＸ Ｉｎｂｅｔｗｅｅｎ Ｓｏｃｉｅｔｙ\n" +
 "             █████████████████████▌         ▐████████████████████                 Terminal N° 747\n" +
 "             ████████████████████████▄▄     ▀███████████████████                O.S. Ver. 8.5.12.16\n" +
 "            ▐████████████████████████████▄    ▀█████████████████\n" +
-"            ███████████████████████████████     ███████████████▌\n" +
-"           ▐████████████████████████████████     ██████████████\n" +
+"            ███████████████████████████████     ███████████████▌                    <span style='color: #FFFF00'>!BETA VERSION!</span>\n" +
+"           ▐████████████████████████████████     ██████████████                <span style='color: #FFFF00'>!SYSTEM MAY BE UNSTABLE!</span>\n" +
 "           ██████████████████████████████████▄    ▀███████████▌\n" +
 "          ▐███████████████████████████████████▄     ██████████\n" +
 "          ▀▀████████████████████████████████████     ████████▌\n" +
@@ -2629,6 +2655,7 @@ var audio = document.getElementById("audio");
                });
             }
          }
+		 
       </script>
    </body>
 </html>
