@@ -14937,6 +14937,7 @@ function stopBackground() {
                             $("body").addClass("tower-bg");
                             moveBackground();
                             audioElement.play();
+		            audioElement.loop = true;
 							prevCommandPizza = false;
 							$("#output").append("<div>You have found a secret!</div>");
                         }
