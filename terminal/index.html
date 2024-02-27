@@ -246,6 +246,22 @@ function stopBackground() {
                   icon.text("OK");
                }, 3000); 
             }
+		 function fetchAsciiArt(file, caption) {
+        $.ajax({
+            url: file,
+            success: function(data) {
+                displayArt(data, caption);
+                $("html, body").animate({ scrollTop: $(document).height() }, 0);
+            },
+            error: function() {
+                displayOutput("Error fetching ASCII art from file: " + file);
+            }
+        });
+    }
+    function displayArt(art, caption) {
+        $("#output").append("<pre>" + art + "</pre>");
+        $("#output").append("<div>" + caption + "</div>");
+    }
             function displayPressSpace() {
                outputDiv.append("<div class='output-text'>\n" +
 "           		 ▀██▄▄▄\n" +
