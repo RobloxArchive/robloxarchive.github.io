@@ -123,19 +123,19 @@ function stopBackground() {
                 displayOutput("Fetching Jay Eazy Pictures and Voice Files...");
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii1.txt", "Yo Bro Why Are You Doing That ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii1.txt", "Yo Bro Why Are You Doing That ! !\n");
                     var audio = new Audio('http://unapersonanormal.github.io/neocities/SAM1.wav'); 
                     audio.play();
                 }, 1000);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii2.txt", "Jay Eazy Ain't Drop Yet Bruh ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii2.txt", "Jay Eazy Ain't Drop Yet Bruh ! !\n");
                     var audio = new Audio('http://unapersonanormal.github.io/neocities/SAM2.wav'); 
                     audio.play();
                 }, 3000);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii3.txt", "Don't Worry Mega Man Drops Jan 7th ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii3.txt", "Don't Worry Mega Man Drops Jan 7th ! !\n");
                     var audio = new Audio('http://unapersonanormal.github.io/neocities/SAM4.wav'); 
                     audio.play();
                 }, 5000);
@@ -147,38 +147,35 @@ function stopBackground() {
                 }, 8200);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii4.txt", "I Was Never Book Smart, I'm Money Smart ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii4.txt", "I Was Never Book Smart, I'm Money Smart ! !\n");
                     var audio = new Audio('http://unapersonanormal.github.io/neocities/SAM5.wav'); 
                     audio.play();
                 }, 9000);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii5.txt", "Makes Me More Intelligent ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii5.txt", "Makes Me More Intelligent ! !\n");
                 }, 11000);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii4.txt", "Call Me Mr. Rock Festival I Got Hella Bands ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii4.txt", "Call Me Mr. Rock Festival I Got Hella Bands ! !\n");
                 }, 13000);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii5.txt", "Shawty Cute And Her Circle Too ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii5.txt", "Shawty Cute And Her Circle Too ! !\n");
                 }, 16200);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii4.txt", "Told Her Get A Friend ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii4.txt", "Told Her Get A Friend ! !\n");
                 }, 18000);
 
                 setTimeout(function() {
-                    fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii5.txt", "She Gon' Make Me Slide With my Dog Like I'm Mega Man ! !\n");
+                    fetchAsciiArt("http://robloxarchive.github.io/terminal/ascii5.txt", "She Gon' Make Me Slide With my Dog Like I'm Mega Man ! !\n");
                 }, 19200);
                     default:
                         $("#output").append("<div>Command not recognized. Type 'help' for assistance.</div>");
 						prevCommandPizza = false;
                         break;
                 }
-		    function displayOutput(output) {
-               $("#output").append("<div>" + output + "</div>");
-            }
 		    function fetchAsciiArt(file, caption) {
         $.ajax({
             url: file,
@@ -195,6 +192,9 @@ function stopBackground() {
         $("#output").append("<pre>" + art + "</pre>");
         $("#output").append("<div>" + caption + "</div>");
     }
+		    		    function displayOutput(output) {
+               $("#output").append("<div>" + output + "</div>");
+            }
                 $("#cmd").val("");
             }
         });
