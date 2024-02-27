@@ -112,8 +112,15 @@ function stopBackground() {
                         audio.play();
 						prevCommandPizza = true;
                         break;
+                    case "help":
+                        $("#output").append("<div>Available commands:</div>");
+                        $("#output").append("<div>- hello: Prints 'Hello world' - ONLY FOR TESTING PURPOSES -</div>");
+                        $("#output").append("<div>- pizza: Plays the 'Pizza!' sound effect - ONLY FOR TESTING PURPOSES</div>");
+                        $("#output").append("<div>- help: Displays info about the commands</div>");
+						prevCommandPizza = false;
+                        break;
 				case "megaman":
-                $("#output").append("<div>Fetching Jay Eazy Pictures and Voice Files...</div>");
+                displayOutput("Fetching Jay Eazy Pictures and Voice Files...");
 
                 setTimeout(function() {
                     fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii1.txt", "Yo Bro Why Are You Doing That ! !\n");
@@ -164,19 +171,30 @@ function stopBackground() {
                 setTimeout(function() {
                     fetchAsciiArt("https://unapersonanormal.neocities.org/ascii/ascii5.txt", "She Gon' Make Me Slide With my Dog Like I'm Mega Man ! !\n");
                 }, 19200);
-				break;
-                    case "help":
-                        $("#output").append("<div>Available commands:</div>");
-                        $("#output").append("<div>- hello: Prints 'Hello world' - ONLY FOR TESTING PURPOSES -</div>");
-                        $("#output").append("<div>- pizza: Plays the 'Pizza!' sound effect - ONLY FOR TESTING PURPOSES</div>");
-                        $("#output").append("<div>- help: Displays info about the commands</div>");
-						prevCommandPizza = false;
-                        break;
                     default:
                         $("#output").append("<div>Command not recognized. Type 'help' for assistance.</div>");
 						prevCommandPizza = false;
                         break;
                 }
+		    function displayOutput(output) {
+               $("#output").append("<div>" + output + "</div>");
+            }
+		    function fetchAsciiArt(file, caption) {
+        $.ajax({
+            url: file,
+            success: function(data) {
+                displayArt(data, caption);
+                $("html, body").animate({ scrollTop: $(document).height() }, 0);
+            },
+            error: function() {
+                displayOutput("Error fetching ASCII art from file: " + file);
+            }
+        });
+    }
+    function displayArt(art, caption) {
+        $("#output").append("<pre>" + art + "</pre>");
+        $("#output").append("<div>" + caption + "</div>");
+    }
                 $("#cmd").val("");
             }
         });
@@ -247,22 +265,6 @@ function stopBackground() {
                   icon.text("OK");
                }, 3000); 
             }
-		 function fetchAsciiArt(file, caption) {
-        $.ajax({
-            url: file,
-            success: function(data) {
-                displayArt(data, caption);
-                $("html, body").animate({ scrollTop: $(document).height() }, 0);
-            },
-            error: function() {
-                displayOutput("Error fetching ASCII art from file: " + file);
-            }
-        });
-    }
-    function displayArt(art, caption) {
-        $("#output").append("<pre>" + art + "</pre>");
-        $("#output").append("<div>" + caption + "</div>");
-    }
             function displayPressSpace() {
                outputDiv.append("<div class='output-text'>\n" +
 "           		 ▀██▄▄▄\n" +
