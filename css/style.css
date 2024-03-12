@@ -1,1 +1,500 @@
-* { box-sizing: border-box; } body {margin: 0;}#iedl{background-repeat:no-repeat;background-position:center top;background-attachment:fixed;background-size:cover;background-image:url('https://robloxarchive.github.io/background.png');}.gjs-row{display:flex;justify-content:flex-start;align-items:stretch;flex-wrap:nowrap;padding:10px;}.gjs-cell{min-height:75px;flex-grow:1;flex-basis:100%;}#MainSite{text-align:center;justify-content:center;max-width:100%;}#iq3d{max-width:900px;}#iytp{padding:10px 10px 0px 10px;}#idgg{background-repeat:space;background-position:left top;background-attachment:scroll;background-size:auto;background-image:url('https://robloxarchive.github.io/banner.png');border:1px solid black;}#ihkk{padding:0px 10px 0px 10px;align-items:center;justify-content:center;}#i2cm{height:40px;min-height:40px;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:linear-gradient(#74aeed 0%, #74aeed 100%);border:1px solid black;display:flex;justify-content:space-around;}#imn1{display:flex;justify-content:space-around;width:100%;flex-direction:row;align-items:center;font-family:Comic Sans MS, cursive, sans-serif;}#i4jy7{color:white;text-decoration:none;}#ihhvm{text-decoration:none;color:white;}#ixzkg{text-decoration:none;color:white;}#i5tfh{text-decoration:none;color:white;}#i4jy7:hover{text-decoration:underline;}#i5tfh:hover{text-decoration:underline;}#ixzkg:hover{text-decoration:underline;}#ihhvm:hover{text-decoration:underline;}input#fname{padding:1px;width:94%;border-style:dashed;}input#lname{padding:1px;width:94%;border-style:dashed;}#login{text-align:center;padding-bottom:4px;background-color:rgba(225, 225, 225, 1);color:#000;display:block;width:180px;height:max-content;overflow:hidden;outline-width:1px;outline-color:#000;font-family:'comic';border-style:solid;border-width:thin;}input[type="text"]{font-family:"Tahoma XP";font-size:1.2em;}input[type="password"]{font-family:"Tahoma XP";font-size:1.2em;}#MrBeast{display:none;}#ERR{color:#F00;font-family:Tahoma XP;display:none;}#ERR2{color:#F00;font-family:Tahoma XP;display:none;}#ERR3{color:#F00;font-family:Tahoma XP;display:none;}#ERR4{color:#F00;font-family:Tahoma XP;display:none;}#ERR5{color:#F00;font-family:Tahoma XP;display:none;}#ERR6{color:#F00;font-family:Tahoma XP;display:none;}#ERR7{color:#F00;font-family:Tahoma XP;display:none;}#ERR8{color:#F00;font-family:Tahoma XP;display:none;}#ERR9{color:#F00;font-family:Tahoma XP;display:none;}#ERR10{color:#F00;font-family:Tahoma XP;display:none;}#ERR11{color:#F00;font-family:Tahoma XP;display:none;}#ERR12{color:#F00;font-family:Tahoma XP;display:none;}#ERR13{color:#F00;font-family:Tahoma XP;display:none;}#ERR14{color:#F00;font-family:Tahoma XP;display:none;}#ERR15{color:#F00;font-family:Tahoma XP;display:none;}#ERR16{color:#F00;font-family:Tahoma XP;display:none;}#ERR17{color:#F00;font-family:Tahoma XP;display:none;}#ERR18{color:#F00;font-family:Tahoma XP;display:none;}#ERR19{color:#F00;font-family:Tahoma XP;display:none;}#ERR20{color:#F00;font-family:Tahoma XP;display:none;}#break{height:10px;}#break2{height:5px;}#break3{height:5px;display:none;}#break4{height:2px;}#login-btn{background-color:#FFF;border-color:#DDD #DDD #DDD #DDD;font-family:Tahoma XP;font-size:1em;}#admin-text{left:0.5%;width:100%;text-align:center;white-space:pre;font-size:0.899em;}#admin{background-color:rgba(205, 205, 205, 1);color:#000;font-family:'Tahoma XP';font-size:1.75em;border-style:none none solid none;border-width:thin;width:100%;text-align:center;padding-left:4px;padding-right:4px;padding-top:4px;padding-bottom:4px;}#inb7k{cursor:pointer;}#iwdir:hover{text-align:center;}#idj0a{justify-content:flex-start;display:flex;align-self:auto;font-weight:100;width:100%;}#ij1sg{padding:10px 10px 0px 10px;}#igee4u{align-items:flex-start;display:block;height:168px;padding:0px 10px 10px 10px;width:203px;}#ilmurc{color:black;border-radius:0px 0px 0px 0px;border:1px solid white;width:100%;height:auto;}#ilddle{font-family:Comic Sans MS, cursive, sans-serif;border:1px solid black;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:linear-gradient(#ffffff 0%, #ffffff 100%);font-weight:400;width:100%;font-size:small;padding:0px 5px 0px 5px;}#iyzpa8{min-height:73px;}#i2jdbu{color:black;border-radius:0px 0px 0px 0px;border:1px solid white;width:100%;height:106px;}#iav8wr{font-family:Comic Sans MS, cursive, sans-serif;border:1px solid black;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:linear-gradient(#ffffff 0%, #ffffff 100%);font-weight:400;width:100%;font-size:small;padding:0px 5px 0px 5px;}#it9prh{justify-content:center;align-items:flex-start;flex-direction:row;display:block;align-self:auto;flex-basis:90%;}#i641rx{align-items:flex-start;display:block;height:168px;padding:0px 0px 10px 0px;width:153px;}#ivhcbc{color:black;border-radius:0px 0px 0px 0px;border:1px solid white;width:100%;height:auto;}#isti2g{font-family:Comic Sans MS, cursive, sans-serif;border:1px solid black;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:linear-gradient(#ffffff 0%, #ffffff 100%);font-weight:400;width:100%;font-size:small;padding:0px 5px 0px 5px;}#iga48g{justify-content:center;align-items:flex-start;flex-direction:row;display:block;align-self:auto;flex-basis:90%;margin:0px 0px 10px 10px;}#i4jn2u{padding:10px 0px 10px 0px;}#i3eslm{color:black;width:100%;border:1px solid #ffffff;height:163px;}#imwsnp{font-family:Comic Sans MS, cursive, sans-serif;border:1px solid black;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:linear-gradient(#ffffff 0%, #ffffff 100%);font-weight:400;width:100%;font-size:small;padding:0px 5px 0px 5px;}#ihy36o{flex-basis:70%;padding:0px 0px 0px 10px;}#i8wr88{padding:0px 10px 10px 10px;}#i9b9xs{color:black;width:100%;border:1px solid #ffffff;}#iduy9h{font-family:Comic Sans MS, cursive, sans-serif;border:1px solid black;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:linear-gradient(#ffffff 0%, #ffffff 100%);font-weight:400;width:100%;font-size:small;padding:0px 5px 0px 5px;}#ir93rg{flex-basis:22%;}#irho9h{color:black;width:100%;border:1px solid #ffffff;height:344px;}#i3nrui{font-family:Comic Sans MS, cursive, sans-serif;border:1px solid black;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;background-image:linear-gradient(#ffffff 0%, #ffffff 100%);font-weight:400;width:100%;font-size:small;padding:0px 5px 0px 5px;}footer{background:transparent;border-top:1px solid #000;color:#000;width:100%;height:40px;padding:10px;text-align:center;font-size:smaller;font-family:'Tahoma XP';}#footer{position:relative;margin:20px 0px 40px 0px;justify-content:center;width:100%;}@font-face{font-family:'Tahoma XP';src:url('https://robloxarchive.github.io/windows-xp-tahoma.ttf');}@font-face{font-family:Comic;src:url('https://robloxarchive.github.io/font/COMIC.TTF');}@media (max-width: 992px){#idgg{background-repeat:repeat;background-position:center top;background-attachment:scroll;background-size:auto;background-image:url('https://robloxarchive.github.io/banner.png');}}@media (max-width: 768px){.gjs-row{flex-wrap:wrap;}}@media (max-width: 480px){#idgg{background-repeat:round;background-position:center top;background-attachment:fixed;background-size:contain;background-image:url('https://robloxarchive.github.io/banner.png');}}
+* {
+     box-sizing: border-box;
+}
+ body {
+    margin: 0;
+}
+#iedl{
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-attachment:fixed;
+    background-size:cover;
+    background-image:url('https://robloxarchive.github.io/background.png');
+}
+.gjs-row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+}
+.gjs-cell{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+}
+#MainSite{
+    text-align:center;
+    justify-content:center;
+    max-width:100%;
+}
+#iq3d{
+    max-width:900px;
+}
+#iytp{
+    padding:10px 10px 0px 10px;
+}
+#idgg{
+    background-repeat:space;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:url('https://robloxarchive.github.io/banner.png');
+    border:1px solid black;
+}
+#ihkk{
+    padding:0px 10px 0px 10px;
+    align-items:center;
+    justify-content:center;
+}
+#i2cm{
+    height:40px;
+    min-height:40px;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:linear-gradient(#74aeed 0%, #74aeed 100%);
+    border:1px solid black;
+    display:flex;
+    justify-content:space-around;
+}
+#imn1{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    flex-direction:row;
+    align-items:center;
+    font-family:Comic Sans MS, cursive, sans-serif;
+}
+#i4jy7{
+    color:white;
+    text-decoration:none;
+}
+#ihhvm{
+    text-decoration:none;
+    color:white;
+}
+#ixzkg{
+    text-decoration:none;
+    color:white;
+}
+#i5tfh{
+    text-decoration:none;
+    color:white;
+}
+#i4jy7:hover{
+    text-decoration:underline;
+}
+#i5tfh:hover{
+    text-decoration:underline;
+}
+#ixzkg:hover{
+    text-decoration:underline;
+}
+#ihhvm:hover{
+    text-decoration:underline;
+}
+input#fname{
+    padding:1px;
+    width:94%;
+    border-style:dashed;
+}
+input#lname{
+    padding:1px;
+    width:94%;
+    border-style:dashed;
+}
+#login{
+    text-align:center;
+    padding-bottom:4px;
+    background-color:rgba(225, 225, 225, 1);
+    color:#000;
+    display:block;
+    width:180px;
+    height:max-content;
+    overflow:hidden;
+    outline-width:1px;
+    outline-color:#000;
+    font-family:'comic';
+    border-style:solid;
+    border-width:thin;
+}
+input[type="text"]{
+    font-family:"Tahoma XP";
+    font-size:1.2em;
+}
+input[type="password"]{
+    font-family:"Tahoma XP";
+    font-size:1.2em;
+}
+#MrBeast{
+    display:none;
+}
+#ERR{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR2{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR3{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR4{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR5{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR6{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR7{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR8{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR9{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR10{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR11{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR12{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR13{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR14{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR15{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR16{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR17{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR18{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR19{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#ERR20{
+    color:#F00;
+    font-family:Tahoma XP;
+    display:none;
+}
+#break{
+    height:10px;
+}
+#break2{
+    height:5px;
+}
+#break3{
+    height:5px;
+    display:none;
+}
+#break4{
+    height:2px;
+}
+#login-btn{
+    background-color:#FFF;
+    border-color:#DDD #DDD #DDD #DDD;
+    font-family:Tahoma XP;
+    font-size:1em;
+}
+#admin-text{
+    left:0.5%;
+    width:100%;
+    text-align:center;
+    white-space:pre;
+    font-size:0.899em;
+}
+#admin{
+    background-color:rgba(205, 205, 205, 1);
+    color:#000;
+    font-family:'Tahoma XP';
+    font-size:1.75em;
+    border-style:none none solid none;
+    border-width:thin;
+    width:100%;
+    text-align:center;
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+#inb7k{
+    cursor:pointer;
+}
+#iwdir:hover{
+    text-align:center;
+}
+#idj0a{
+    justify-content:flex-start;
+    display:flex;
+    align-self:auto;
+    font-weight:100;
+    width:100%;
+}
+#ij1sg{
+    padding:10px 10px 0px 10px;
+}
+#igee4u{
+    align-items:flex-start;
+    display:block;
+    height:168px;
+    padding:0px 10px 10px 10px;
+    width:203px;
+}
+#ilmurc{
+    color:black;
+    border-radius:0px 0px 0px 0px;
+    border:1px solid white;
+    width:100%;
+    height:auto;
+}
+#ilddle{
+    font-family:Comic Sans MS, cursive, sans-serif;
+    border:1px solid black;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
+    font-weight:400;
+    width:100%;
+    font-size:small;
+    padding:0px 5px 0px 5px;
+}
+#iyzpa8{
+    min-height:73px;
+}
+#i2jdbu{
+    color:black;
+    border-radius:0px 0px 0px 0px;
+    border:1px solid white;
+    width:100%;
+    height:106px;
+}
+#iav8wr{
+    font-family:Comic Sans MS, cursive, sans-serif;
+    border:1px solid black;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
+    font-weight:400;
+    width:100%;
+    font-size:small;
+    padding:0px 5px 0px 5px;
+}
+#it9prh{
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:row;
+    display:block;
+    align-self:auto;
+    flex-basis:90%;
+}
+#i641rx{
+    align-items:flex-start;
+    display:block;
+    height:168px;
+    padding:0px 0px 10px 0px;
+    width:153px;
+}
+#ivhcbc{
+    color:black;
+    border-radius:0px 0px 0px 0px;
+    border:1px solid white;
+    width:100%;
+    height:auto;
+}
+#isti2g{
+    font-family:Comic Sans MS, cursive, sans-serif;
+    border:1px solid black;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
+    font-weight:400;
+    width:100%;
+    font-size:small;
+    padding:0px 5px 0px 5px;
+}
+#iga48g{
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:row;
+    display:block;
+    align-self:auto;
+    flex-basis:90%;
+    margin:0px 0px 10px 10px;
+}
+#i4jn2u{
+    padding:10px 0px 10px 0px;
+}
+#i3eslm{
+    color:black;
+    width:100%;
+    border:1px solid #ffffff;
+    height:163px;
+}
+#imwsnp{
+    font-family:Comic Sans MS, cursive, sans-serif;
+    border:1px solid black;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
+    font-weight:400;
+    width:100%;
+    font-size:small;
+    padding:0px 5px 0px 5px;
+}
+#ihy36o{
+    flex-basis:70%;
+    padding:0px 0px 0px 10px;
+}
+#i8wr88{
+    padding:0px 10px 10px 10px;
+}
+#i9b9xs{
+    color:black;
+    width:100%;
+    border:1px solid #ffffff;
+}
+#iduy9h{
+    font-family:Comic Sans MS, cursive, sans-serif;
+    border:1px solid black;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
+    font-weight:400;
+    width:100%;
+    font-size:small;
+    padding:0px 5px 0px 5px;
+}
+#ir93rg{
+    flex-basis:22%;
+}
+#irho9h{
+    color:black;
+    width:100%;
+    border:1px solid #ffffff;
+    height:344px;
+}
+#i3nrui{
+    font-family:Comic Sans MS, cursive, sans-serif;
+    border:1px solid black;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
+    font-weight:400;
+    width:100%;
+    font-size:small;
+    padding:0px 5px 0px 5px;
+}
+footer{
+    background:transparent;
+    border-top:1px solid #000;
+    color:#000;
+    width:100%;
+    height:40px;
+    padding:10px;
+    text-align:center;
+    font-size:smaller;
+    font-family:'Tahoma XP';
+}
+#footer{
+    position:relative;
+    margin:20px 0px 40px 0px;
+    justify-content:center;
+    width:100%;
+}
+@font-face{
+    font-family:'Tahoma XP';
+    src:url('https://robloxarchive.github.io/windows-xp-tahoma.ttf');
+}
+@font-face{
+    font-family:Comic;
+    src:url('https://robloxarchive.github.io/font/COMIC.TTF');
+}
+@media (max-width: 992px){
+    #idgg{
+        background-repeat:repeat;
+        background-position:center top;
+        background-attachment:scroll;
+        background-size:auto;
+        background-image:url('https://robloxarchive.github.io/banner.png');
+    }
+}
+@media (max-width: 768px){
+    .gjs-row{
+        flex-wrap:wrap;
+    }
+}
+@media (max-width: 480px){
+    #idgg{
+        background-repeat:round;
+        background-position:center top;
+        background-attachment:fixed;
+        background-size:contain;
+        background-image:url('https://robloxarchive.github.io/banner.png');
+    }
+}
