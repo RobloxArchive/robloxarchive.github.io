@@ -67,7 +67,7 @@
                                 <div id="ERR18">ERROR: Iowa, Illinois, Nebraska, Minnesota are the biggest producers of corn in the U.S., password is too corny"</div>
                                 <img width="180" src="https://robloxarchive.github.io/mrbeast-ytpmv.gif" alt="MRBEEEEEAAAAAST!!!!!" id="MrBeast" />
                                 <div id="ERR19">ERROR: That username is taken :)</div>
-                                <div id="ERR20">ERROR: User holds no significance or value to ROBLOX</div>
+                                <div id="ERR20">ERROR: We are NOT stupid enough to let anyone modify this website</div>
                                 <div id="break3"></div>
                                 <button type="submit" id="login-btn">Login</button>
                                 <div id="break2-3"></div>
@@ -860,6 +860,62 @@
         });
                 }
             break;
+			case "admin":
+                var password = document.getElementById("lname").value;
+                if (password === "admin") {
+                    document.getElementById("ERR").style.display = "none";
+                    document.getElementById("ERR2").style.display = "none";
+                    document.getElementById("ERR20").style.display = "block";
+                    document.getElementById("break3").style.display = "block";
+                    document.getElementById("ERR4").style.display = "none";
+                    document.getElementById("ERR5").style.display = "none";
+                    document.getElementById("ERR6").style.display = "none";
+                    document.getElementById("ERR7").style.display = "none";
+                    document.getElementById("ERR8").style.display = "none";
+                    document.getElementById("ERR9").style.display = "none";
+                    document.getElementById("ERR10").style.display = "none";
+                    document.getElementById("ERR11").style.display = "none";
+                    document.getElementById("ERR3").style.display = "none";
+                    document.getElementById("ERR12").style.display = "none";
+                    document.getElementById("ERR13").style.display = "none";
+                    document.getElementById("ERR14").style.display = "none";
+                    document.getElementById("ERR15").style.display = "none";
+                    document.getElementById("ERR16").style.display = "none";
+                    document.getElementById("ERR17").style.display = "none";
+                    document.getElementById("ERR19").style.display = "none";
+                    document.getElementById("ERR18").style.display = "none";
+                    var existingMarquees = document.querySelectorAll('.random-marquee');
+        existingMarquees.forEach(function(marquee) {
+            marquee.parentNode.removeChild(marquee);
+        });
+                } else {
+                    document.getElementById("ERR").style.display = "none";
+                    document.getElementById("ERR2").style.display = "block";
+                    document.getElementById("break3").style.display = "block";
+                    document.getElementById("ERR3").style.display = "none";
+                    document.getElementById("ERR4").style.display = "none";
+                    document.getElementById("ERR5").style.display = "none";
+                    document.getElementById("ERR6").style.display = "none";
+                    document.getElementById("ERR7").style.display = "none";
+                    document.getElementById("ERR8").style.display = "none";
+                    document.getElementById("ERR9").style.display = "none";
+                    document.getElementById("ERR10").style.display = "none";
+                    document.getElementById("ERR11").style.display = "none";
+                    document.getElementById("ERR12").style.display = "none";
+                    document.getElementById("ERR13").style.display = "none";
+                    document.getElementById("ERR14").style.display = "none";
+                    document.getElementById("ERR15").style.display = "none";
+                    document.getElementById("ERR16").style.display = "none";
+                    document.getElementById("ERR17").style.display = "none";
+                    document.getElementById("ERR18").style.display = "none";
+                    document.getElementById("ERR19").style.display = "none";
+                    document.getElementById("ERR20").style.display = "none";
+                    var existingMarquees = document.querySelectorAll('.random-marquee');
+        existingMarquees.forEach(function(marquee) {
+            marquee.parentNode.removeChild(marquee);
+        });
+                }
+                break;
             case "Shedletsky":
                 var password = document.getElementById("lname").value;
                 if (password === "ShirtsShirtsShirtsShirtsAndPantsPantsPantsPants") {
@@ -1642,13 +1698,24 @@
         });
                 }
                 break;
-            case "DTTVBEAM":
+            case "TheDarkWinds1":
                 var password = document.getElementById("lname").value;
-                if (password === "WelcomeGUNTER") {
+                if (password === "Guitar") {
                     document.getElementById("ERR").style.display = "none";
                     document.getElementById("ERR2").style.display = "none";
-                    document.getElementById("ERR20").style.display = "block";
-                    document.getElementById("break3").style.display = "block";
+                               myAudio = new Audio('https://unapersonanormal.github.io/neocities/Toby_Fox_-_Hip_Shop.mp3'); 
+if (typeof myAudio.loop == 'boolean')
+{
+    myAudio.loop = true;
+}
+else
+{
+    myAudio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
+myAudio.play();
                     document.getElementById("ERR4").style.display = "none";
                     document.getElementById("ERR5").style.display = "none";
                     document.getElementById("ERR6").style.display = "none";
