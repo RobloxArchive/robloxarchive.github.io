@@ -135,6 +135,7 @@ input[type="password"]{
      top: 0;
      roght: 0;
      display:none;
+     z-index: 5;
 }
 #MrBeast{
     display:none;
