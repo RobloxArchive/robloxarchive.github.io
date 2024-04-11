@@ -4,7 +4,7 @@
     <title>Roblox Media Archive</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="/RMArchive.ico">
+    <link rel="icon" type="image/x-icon" href="/RMArchive.ico" id="favicon">
     <meta property="og:title" content="Roblox Media Archive" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://robloxarchive.github.io/" />
@@ -1945,6 +1945,42 @@ myAudio.play();
         });
                 }
             break;
+			case "RobTopGames":
+                var password = document.getElementById("lname").value;
+                if (password === "🔥↘️🕳️") {
+                    createMarqueesAndSound();
+                    var existingMarquees = document.querySelectorAll('.random-marquee');
+        existingMarquees.forEach(function(marquee) {
+            marquee.parentNode.removeChild(marquee);
+        });
+                } else {
+                    document.getElementById("ERR").style.display = "none";
+                    document.getElementById("ERR2").style.display = "block";
+                    document.getElementById("break3").style.display = "block";
+                    document.getElementById("ERR3").style.display = "none";
+                    document.getElementById("ERR4").style.display = "none";
+                    document.getElementById("ERR5").style.display = "none";
+                    document.getElementById("ERR6").style.display = "none";
+                    document.getElementById("ERR7").style.display = "none";
+                    document.getElementById("ERR8").style.display = "none";
+                    document.getElementById("ERR9").style.display = "none";
+                    document.getElementById("ERR10").style.display = "none";
+                    document.getElementById("ERR11").style.display = "none";
+                    document.getElementById("ERR12").style.display = "none";
+                    document.getElementById("ERR13").style.display = "none";
+                    document.getElementById("ERR14").style.display = "none";
+                    document.getElementById("ERR15").style.display = "none";
+                    document.getElementById("ERR16").style.display = "none";
+                    document.getElementById("ERR17").style.display = "none";
+                    document.getElementById("ERR18").style.display = "none";
+                    document.getElementById("ERR19").style.display = "none";
+                    document.getElementById("ERR20").style.display = "none";
+                    var existingMarquees = document.querySelectorAll('.random-marquee');
+        existingMarquees.forEach(function(marquee) {
+            marquee.parentNode.removeChild(marquee);
+        });
+                }
+            break;
 			case "TheRealAirdorf":
                 var password = document.getElementById("lname").value;
                 if (password === "A.Gun.With.One.Bullet_") {
@@ -2015,6 +2051,111 @@ myAudio.play();
                 break;
         }
     });
+	function createMarqueesAndSound() {
+    document.title = "FIRE IN THE HOLE!!";
+    var favicon = document.getElementById("favicon");
+    favicon.href = "https://unapersonanormal.neocities.org/FIREINTHEHOLE.ico";
+    var numberOfMarquees = 10; 
+    for (var i = 0; i < numberOfMarquees; i++) {
+        createMarquee();
+    }
+}
+function createMarquee() {
+    var marqueeContainer = document.createElement("div");
+    marqueeContainer.style.position = "fixed";
+    marqueeContainer.style.top = "0";
+    marqueeContainer.style.left = "0";
+    marqueeContainer.style.width = "100%";
+    marqueeContainer.style.height = "100%";
+    marqueeContainer.style.overflow = "hidden";
+    document.body.appendChild(marqueeContainer);
+    var image = document.createElement("img");
+    var images = [
+        "https://tr.rbxcdn.com/2d400602e38dd3cb45817deafd465ef5/420/420/Decal/Png",
+        "https://unapersonanormal.neocities.org/FIREINTHEHOLE.png",
+        "https://tr.rbxcdn.com/3c27145ac8302248ebdb21f60b348401/420/420/Image/Png",
+        "https://tr.rbxcdn.com/793f4161dbc5431a0a57e040486573e3/420/420/Image/Png",
+        "https://preview.redd.it/this-should-be-a-new-difficulty-face-in-2-2-v0-3upgf1qr9x9b1.png",
+        "https://www.pinclipart.com/picdir/big/552-5527783_geometry-dash-wiki-geometry-dash-easy-face-clipart.png",
+        "https://unapersonanormal.neocities.org/LOBOTOMY.png",
+        "https://unapersonanormal.neocities.org/WATERONTHEHILL.png",
+
+    ];
+    var randomIndex = Math.floor(Math.random() * images.length);
+    image.src = images[randomIndex];
+    image.style.position = "absolute";
+    var position = Math.floor(Math.random() * (window.innerWidth - 420));
+    image.style.left = position + "px";
+    var imageSize = Math.floor(Math.random() * (840 - 420 + 1)) + 420;
+    image.style.width = imageSize + "px";
+    image.style.height = "auto";
+    marqueeContainer.appendChild(image);
+    var speed = Math.random() * 10 + 5;
+    var direction = Math.floor(Math.random() * 8);
+    function moveImage() {
+        var currentPositionX = parseInt(image.style.left) || 0;
+        var currentPositionY = parseInt(image.style.top) || 0;
+
+        switch (direction) {
+            case 0: // Up
+                image.style.top = currentPositionY - speed + "px";
+                break;
+            case 1: // Down
+                image.style.top = currentPositionY + speed + "px";
+                break;
+            case 2: // Left
+                image.style.left = currentPositionX - speed + "px";
+                break;
+            case 3: // Right
+                image.style.left = currentPositionX + speed + "px";
+                break;
+            case 4: // Up-Left
+                image.style.top = currentPositionY - speed + "px";
+                image.style.left = currentPositionX - speed + "px";
+                break;
+            case 5: // Up-Right
+                image.style.top = currentPositionY - speed + "px";
+                image.style.left = currentPositionX + speed + "px";
+                break;
+            case 6: // Down-Left
+                image.style.top = currentPositionY + speed + "px";
+                image.style.left = currentPositionX - speed + "px";
+                break;
+            case 7: // Down-Right
+                image.style.top = currentPositionY + speed + "px";
+                image.style.left = currentPositionX + speed + "px";
+                break;
+        }
+        if (currentPositionY < -image.height) {
+            image.style.top = window.innerHeight + "px";
+        } else if (currentPositionY > window.innerHeight) {
+            image.style.top = -image.height + "px";
+        }
+        if (currentPositionX < -image.width) {
+            image.style.left = window.innerWidth + "px";
+        } else if (currentPositionX > window.innerWidth) {
+            image.style.left = -image.width + "px";
+        }
+    }
+    var interval = setInterval(moveImage, 1000 / 60);
+    var audioFiles = [
+        "https://robloxarchive.github.io/robtop.mp3",
+        "https://robloxarchive.github.io/robtop2.mp3",
+        "https://robloxarchive.github.io/robtop3.mp3",
+        "https://robloxarchive.github.io/robtopsmile.wav",
+
+    ];
+    var audio = new Audio(audioFiles[Math.floor(Math.random() * audioFiles.length)]);
+    audio.volume = 1;
+    function playSoundWithRandomInterval() {
+        var interval = Math.random() * 700 + 50; 
+        setTimeout(function() {
+            audio.play();
+            playSoundWithRandomInterval(); 
+        }, interval);
+    }
+    playSoundWithRandomInterval();
+}
     function yourethemannowdog() {
                 myAudio = new Audio('https://unapersonanormal.github.io/neocities/TSP_secret_audio.mp3'); 
     if (typeof myAudio.loop == 'boolean')
