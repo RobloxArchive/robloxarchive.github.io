@@ -80541,27 +80541,21 @@
 		case "jxxyy":
                 var password = document.getElementById("lname").value;
                 if (password === "Movie📸") {
-		    document.getElementById("ERR").style.display = "none";
-                    document.getElementById("ERR3").style.display = "none";
-                    document.getElementById("ERR2").style.display = "none";
-                    document.getElementById("ERR4").style.display = "block";
-                    document.getElementById("break3").style.display = "block";
-                    document.getElementById("ERR5").style.display = "none";
-                    document.getElementById("ERR6").style.display = "none";
-                    document.getElementById("ERR7").style.display = "none";
-                    document.getElementById("ERR8").style.display = "none";
-                    document.getElementById("ERR9").style.display = "none";
-                    document.getElementById("ERR10").style.display = "none";
-                    document.getElementById("ERR11").style.display = "none";
-                    document.getElementById("ERR12").style.display = "none";
-                    document.getElementById("ERR13").style.display = "none";
-                    document.getElementById("ERR14").style.display = "none";
-                    document.getElementById("ERR15").style.display = "none";
-                    document.getElementById("ERR16").style.display = "none";
-                    document.getElementById("ERR17").style.display = "none";
-                    document.getElementById("ERR18").style.display = "none";
-                    document.getElementById("ERR19").style.display = "none";
-                    document.getElementById("ERR20").style.display = "none";
+		    var joeyy = document.getElementById("jxxyy");
+    var shadowwizardmoneygang = document.getElementById("WIZARD");
+    shadowwizardmoneygang.currentTime = 0; 
+    shadowwizardmoneygang.play();
+    joeyy.style.display = "block";
+    var opacity = 1;
+    var interval = setInterval(function() {
+        if (opacity <= 0) {
+            clearInterval(interval);
+            joeyy.style.display = "none";
+        } else {
+            opacity -= 0.01; 
+            joeyy.style.opacity = opacity;
+        }
+    }, 20);
                     var existingMarquees = document.querySelectorAll('.random-marquee');
         existingMarquees.forEach(function(marquee) {
             marquee.parentNode.removeChild(marquee);
